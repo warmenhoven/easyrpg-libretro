@@ -397,7 +397,7 @@ libretro-build-ios-arm64:
 # tvOS build
 deps:tvos:
   extends:
-    - .libretro-tvos-cmake
+    - .libretro-tvos-cmake-arm64
     - .build-deps-easyrpg
   variables:
     PLATFORM_TARGET: tvos
@@ -405,7 +405,7 @@ deps:tvos:
 libretro-build-tvos-arm64:
   extends:
     - .core-defs
-    - .libretro-tvos-cmake
+    - .libretro-tvos-cmake-arm64
   dependencies:
     - deps:tvos
   needs:
